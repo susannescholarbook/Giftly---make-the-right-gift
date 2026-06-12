@@ -36,6 +36,21 @@ Your site will be live at:
 
 **https://susannescholarbook.github.io/Giftly---make-the-right-gift/**
 
+## Contact form setup
+
+The contact form uses [Web3Forms](https://web3forms.com) (free, no backend needed).
+
+1. Go to [web3forms.com](https://web3forms.com) and enter **your email address**
+2. Copy the **Access Key** you receive
+3. **Locally:** create a `.env` file (see `.env.example`) and paste the key:
+   ```
+   VITE_WEB3FORMS_ACCESS_KEY=your-key-here
+   ```
+4. **On GitHub Pages:** in your repo go to **Settings → Secrets and variables → Actions → New repository secret**
+   - Name: `VITE_WEB3FORMS_ACCESS_KEY`
+   - Value: your access key
+5. Push to `main` — the form will then send emails to your inbox
+
 ## Color palette
 
 | Name        | Hex       |

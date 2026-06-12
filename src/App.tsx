@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react';
 import Ballpit from './components/backgrounds/Ballpit';
 import Grainient from './components/backgrounds/Grainient';
 import ErrorBoundary from './components/ErrorBoundary';
+import ContactForm from './components/ContactForm';
 import FilterPanel from './components/FilterPanel';
 import GiftResults from './components/GiftResults';
 import { gifts } from './data/gifts';
@@ -47,6 +48,9 @@ export default function App() {
             </a>
             <a href="#play" className="transition hover:text-charcoal">
               Play
+            </a>
+            <a href="#contact" className="transition hover:text-charcoal">
+              Kontakt
             </a>
           </nav>
         </div>
@@ -114,6 +118,8 @@ export default function App() {
             </div>
           </div>
         </section>
+
+        <ContactForm />
       </main>
 
       <footer className="relative border-t border-white/30 bg-white/20 px-6 py-8 backdrop-blur-md md:px-10">
