@@ -29,6 +29,7 @@ export default function ContactForm() {
         body: JSON.stringify({
           vorname: firstName,
           email,
+          nachricht: message,
         }),
       });
 
